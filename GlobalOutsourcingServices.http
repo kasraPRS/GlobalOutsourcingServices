@@ -1,0 +1,6 @@
+@Global_Outsourcing_service_s_HostAddress = http://localhost:5287
+
+GET {{Global_Outsourcing_service_s_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
