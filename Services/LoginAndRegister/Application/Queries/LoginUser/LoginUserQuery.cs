@@ -1,6 +1,6 @@
 ﻿using MediatR;
 
-namespace GlobalOutsourcingServices.Application.Queries.LoginUser
+namespace GlobalOutsourcingServices.Services.LoginAndRegister.Application.Queries.LoginUser
 {
     public class LoginUserQuery: IRequest<string>
     {

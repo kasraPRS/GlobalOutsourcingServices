@@ -1,5 +1,4 @@
-﻿
-namespace GlobalOutsourcingServices.Domain.Entities
+﻿namespace GlobalOutsourcingServices.Services.LoginAndRegister.Domain.Entities
 {
     public class User
     {

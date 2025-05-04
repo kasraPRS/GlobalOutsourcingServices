@@ -1,7 +1,6 @@
-﻿
-using MediatR;
+﻿using MediatR;
 
-namespace GlobalOutsourcingServices.Application.Commands.RegisterUser
+namespace GlobalOutsourcingServices.Services.LoginAndRegister.Application.Commands.RegisterUser
 {
     public class RegisterUserCommand: IRequest<string>
     {

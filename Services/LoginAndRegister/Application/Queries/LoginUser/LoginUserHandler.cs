@@ -1,10 +1,9 @@
-﻿
-using GlobalOutsourcingServices.Inferastructure;
-using GlobalOutsourcingServices.Persistance;
+﻿using GlobalOutsourcingServices.Services.LoginAndRegister.Inferastructure;
+using GlobalOutsourcingServices.Services.LoginAndRegister.Persistance;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 
-namespace GlobalOutsourcingServices.Application.Queries.LoginUser
+namespace GlobalOutsourcingServices.Services.LoginAndRegister.Application.Queries.LoginUser
 {
     public class LoginUserHandler : IRequestHandler<LoginUserQuery, string>
     {
