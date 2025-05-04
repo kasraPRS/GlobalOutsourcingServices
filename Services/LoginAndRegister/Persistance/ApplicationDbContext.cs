@@ -1,7 +1,7 @@
-﻿using GlobalOutsourcingServices.Domain.Entities;
+﻿using GlobalOutsourcingServices.Services.LoginAndRegister.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace GlobalOutsourcingServices.Persistance
+namespace GlobalOutsourcingServices.Services.LoginAndRegister.Persistance
 {
     public class ApplicationDbContext : DbContext
     {

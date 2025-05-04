@@ -27,9 +27,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="API\Controllers\" />
-    <Folder Include="Application\Interfaces\" />
-    <Folder Include="Application\Queries\" />
+    <Folder Include="Services\LoginAndRegister\Application\Interfaces\" />
+    <Folder Include="Services\Tasks\Application\Interfaces\" />
+    <Folder Include="Services\Tasks\Application\Queries\GetTasks\" />
+    <Folder Include="Services\Tasks\API\" />
+    <Folder Include="Services\Tasks\Domain\" />
+    <Folder Include="Services\Tasks\Inferastructure\" />
+    <Folder Include="Services\Tasks\Persistance\" />
   </ItemGroup>
 
 </Project>

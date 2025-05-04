@@ -1,13 +1,12 @@
-﻿
-using GlobalOutsourcingServices.Domain.Entities;
-using GlobalOutsourcingServices.Inferastructure;
-using GlobalOutsourcingServices.Persistance;
+﻿using GlobalOutsourcingServices.Services.LoginAndRegister.Domain.Entities;
+using GlobalOutsourcingServices.Services.LoginAndRegister.Inferastructure;
+using GlobalOutsourcingServices.Services.LoginAndRegister.Persistance;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 
 
 
-namespace GlobalOutsourcingServices.Application.Commands.RegisterUser
+namespace GlobalOutsourcingServices.Services.LoginAndRegister.Application.Commands.RegisterUser
 {
     public class RegisterUserHandler : IRequestHandler<RegisterUserCommand, string>
     {

@@ -1,5 +1,4 @@
-﻿using GlobalOutsourcingServices.Persistance;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 
 namespace GlobalOutsourcingServices.Configuration
 {

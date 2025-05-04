@@ -1,10 +1,10 @@
-﻿using GlobalOutsourcingServices.Domain.Entities;
+﻿using GlobalOutsourcingServices.Services.LoginAndRegister.Domain.Entities;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 
-namespace GlobalOutsourcingServices.Inferastructure
+namespace GlobalOutsourcingServices.Services.LoginAndRegister.Inferastructure
 {
     public interface IJwtService
     {

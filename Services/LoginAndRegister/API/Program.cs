@@ -1,6 +1,6 @@
-using GlobalOutsourcingServices.Application.Commands.RegisterUser;
-using GlobalOutsourcingServices.Inferastructure;
-using GlobalOutsourcingServices.Persistance;
+using GlobalOutsourcingServices.Services.LoginAndRegister.Application.Commands.RegisterUser;
+using GlobalOutsourcingServices.Services.LoginAndRegister.Inferastructure;
+using GlobalOutsourcingServices.Services.LoginAndRegister.Persistance;
 using MediatR;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;

@@ -1,9 +1,9 @@
-﻿using GlobalOutsourcingServices.Application.Commands.RegisterUser;
-using GlobalOutsourcingServices.Application.Queries.LoginUser;
+﻿using GlobalOutsourcingServices.Services.LoginAndRegister.Application.Commands.RegisterUser;
+using GlobalOutsourcingServices.Services.LoginAndRegister.Application.Queries.LoginUser;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
-namespace GlobalOutsourcingServices.API.Controllers
+namespace GlobalOutsourcingServices.Services.LoginAndRegister.API.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
