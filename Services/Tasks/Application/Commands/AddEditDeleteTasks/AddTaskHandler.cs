@@ -11,7 +11,7 @@ namespace GlobalOutsourcingServices.Services.Tasks.Application.Command.AddEditDe
        private readonly TaskService _taskService;
 
         public async Task<string> Handle(AddTaskCommandDTO request, CancellationToken cancellationToken)
-        {
+    {
 
 
             //_context.TaskModels.Add(request);
@@ -20,6 +20,6 @@ namespace GlobalOutsourcingServices.Services.Tasks.Application.Command.AddEditDe
             //return _taskService.Createask(request);
              
         }
- }
+    }
 
 }
