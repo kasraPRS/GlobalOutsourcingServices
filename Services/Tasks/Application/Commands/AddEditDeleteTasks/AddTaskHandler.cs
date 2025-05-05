@@ -1,12 +1,25 @@
-﻿using MediatR;
+﻿using GlobalOutsourcingServices.Services.Tasks.Inferastructure;
+using GlobalOutsourcingServices.Services.Tasks.Persistance;
+using MediatR;
+using Microsoft.EntityFrameworkCore;
 
 namespace GlobalOutsourcingServices.Services.Tasks.Application.Command.AddEditDeleteTasks
 {
     public class AddTaskHandler : IRequestHandler<AddTaskCommandDTO, string>
     {
-        Task<string> IRequestHandler<AddTaskCommandDTO, string>.Handle(AddTaskCommandDTO request, CancellationToken cancellationToken)
+       private readonly TasksDbContext _context;
+       private readonly TaskService _taskService;
+
+        public async Task<string> Handle(AddTaskCommandDTO request, CancellationToken cancellationToken)
         {
-            throw new NotImplementedException();
+
+
+            //_context.TaskModels.Add(request);
+            //await _context.SaveChangesAsync();
+
+            //return _taskService.Createask(request);
+             
         }
-    }
+ }
+
 }

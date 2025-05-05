@@ -1,21 +1,28 @@
-﻿using GlobalOutsourcingServices.Services.Tasks.Application.Command.AddEditDeleteTasks;
-using GlobalOutsourcingServices.Services.Tasks.Application.Interfaces;
-using GlobalOutsourcingServices.Services.Tasks.Domain.Entities;
+﻿using GlobalOutsourcingServices.Services.Tasks.Domain.Entities;
+using GlobalOutsourcingServices.Services.Tasks.Persistance;
 
 namespace GlobalOutsourcingServices.Services.Tasks.Inferastructure
 {
     public class TaskService : ITaskCRUDRepository
     {
         private readonly ITaskCRUDRepository _repository;
+        private readonly TasksDbContext _context;
 
-        public TaskService(ITaskCRUDRepository repository)
+
+        public TaskService(TasksDbContext repository, ITaskCRUDRepository taskCRUDRepository)
         {
-            _repository = repository;
+            _context = repository;
+            _repository = taskCRUDRepository;
         }
 
-        public async Task Createask(TaskModel task)
+        public async Task CreateTask(TaskModel task)
         {
-            await _repository.Createask(task);
+            await _repository.CreateTask(task);
+        }
+
+        public async Task UpdateTask(TaskModel task)
+        {
+            await _repository.UpdateTask(task);
         }
 
         public async Task DeleteTaskById(int taskId)
@@ -33,9 +40,5 @@ namespace GlobalOutsourcingServices.Services.Tasks.Inferastructure
             return await _repository.GetTaskById(taskId);
         }
 
-        public async Task UpdateTask(TaskModel task)
-        {
-            await _repository.UpdateTask(task);
-        }
     }
 }
