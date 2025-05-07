@@ -1,5 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
-
+﻿using AutoMapper;
 namespace GlobalOutsourcingServices.Configuration
 {
     public class Startup
@@ -35,7 +34,6 @@ namespace GlobalOutsourcingServices.Configuration
                     });
             });
             // Add AutoMapper
-            //services.AddAutoMapper(typeof(Startup));
         }
     }
 }

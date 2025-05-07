@@ -1,4 +1,5 @@
-﻿using GlobalOutsourcingServices.Services.Inferastructure;
+﻿using GlobalOutsourcingServices.Services.Domain.Entities;
+using GlobalOutsourcingServices.Services.Inferastructure;
 using GlobalOutsourcingServices.Services.LoginAndRegister.Domain.Entities;
 using GlobalOutsourcingServices.Services.Persistance;
 using MediatR;
@@ -23,7 +24,7 @@ namespace GlobalOutsourcingServices.Services.Application.Commands.RegisterUser
             var exists = await _context.Users.AnyAsync(u => u.Username == request.Username);
             if (exists) throw new Exception("USER_REGISTERED_BEFORE");
 
-            var user = new User
+            var user = new UserModel
             {
                 Username = request.Username,
                 Password = BCrypt.Net.BCrypt.HashPassword(request.Password)

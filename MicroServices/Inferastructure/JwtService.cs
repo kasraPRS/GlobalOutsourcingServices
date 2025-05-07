@@ -8,7 +8,7 @@ namespace GlobalOutsourcingServices.Services.Inferastructure
 {
     public interface IJwtService
     {
-        string GenerateToken(User user);
+        string GenerateToken(UserModel user);
     }
 
     public class JwtService : IJwtService
@@ -20,7 +20,7 @@ namespace GlobalOutsourcingServices.Services.Inferastructure
             _config = config;
         }
 
-        public string GenerateToken(User user)
+        public string GenerateToken(UserModel user)
         {
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["JwtConfig:key"]));
             var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
